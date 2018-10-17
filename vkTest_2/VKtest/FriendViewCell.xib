@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idFriendCell" rowHeight="146" id="KGk-i7-Jjw" customClass="FriendViewCell" customModule="VKtest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRT-Hu-aFR">
+                        <rect key="frame" x="16" y="53" width="273" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kIR-PP-voL">
+                        <rect key="frame" x="297" y="23" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Bsi-ED-7J2"/>
+                            <constraint firstAttribute="width" constant="100" id="SGs-Hg-q94"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-tV-fwH">
+                        <rect key="frame" x="377" y="103" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Er5-2x-mr3"/>
+                            <constraint firstAttribute="width" constant="16" id="xj6-G7-YWt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-iC-r51">
+                        <rect key="frame" x="337" y="63" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kIR-PP-voL" firstAttribute="leading" secondItem="FRT-Hu-aFR" secondAttribute="trailing" constant="8" id="19z-Pg-sMy"/>
+                    <constraint firstItem="kIR-PP-voL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="5xd-wh-7wF"/>
+                    <constraint firstItem="MrM-iC-r51" firstAttribute="centerX" secondItem="kIR-PP-voL" secondAttribute="centerX" id="AzA-X0-Exl"/>
+                    <constraint firstItem="MrM-iC-r51" firstAttribute="centerY" secondItem="kIR-PP-voL" secondAttribute="centerY" id="G4r-1V-9Z7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FRT-Hu-aFR" secondAttribute="bottom" constant="42" id="Mfq-Ae-7AQ"/>
+                    <constraint firstItem="Qo8-tV-fwH" firstAttribute="leading" secondItem="kIR-PP-voL" secondAttribute="trailing" constant="-20" id="OqD-Be-B6F"/>
+                    <constraint firstItem="FRT-Hu-aFR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="R7e-e0-3BR"/>
+                    <constraint firstItem="Qo8-tV-fwH" firstAttribute="top" secondItem="kIR-PP-voL" secondAttribute="bottom" constant="-20" id="Rrf-8U-fyg"/>
+                    <constraint firstAttribute="trailing" secondItem="kIR-PP-voL" secondAttribute="trailing" constant="18" id="TIC-Ll-M6E"/>
+                    <constraint firstItem="FRT-Hu-aFR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="42" id="fCM-pM-aed"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kIR-PP-voL" secondAttribute="bottom" constant="12" id="zpS-uG-l2N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicator" destination="MrM-iC-r51" id="xZm-9R-pjT"/>
+                <outlet property="labelNameFriend" destination="FRT-Hu-aFR" id="qW3-DT-OIr"/>
+                <outlet property="onlineStatus" destination="Qo8-tV-fwH" id="A5X-1W-tCJ"/>
+                <outlet property="photoFriend" destination="kIR-PP-voL" id="g2l-5C-Fh0"/>
+            </connections>
+            <point key="canvasLocation" x="70.5" y="105"/>
+        </tableViewCell>
+    </objects>
+</document>
